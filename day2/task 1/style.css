@@ -1,0 +1,16 @@
+*{
+    font-size: 1.2em;
+}
+button{
+    margin: 10px;
+}
+#textField{
+    border: 1px solid black;
+    padding: 20px 10px;
+}
+
+.btn{
+    background-color:blue;
+    color: aliceblue;
+    border-radius: 10px;
+}

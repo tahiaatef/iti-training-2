@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myPromise=new Promise(function(resolve,reject){
+            if(confirm("Do you want to enter your name ?")){
+                resolve(`accepted`)
+            }else{
+                reject("rejected");
+            }
+        });
+
+        myPromise.then((msg)=>{
+            console.log(msg);
+            return new Promise(function(resolve,reject){
+                setTimeout(() => {
+                    let name=prompt("enter the name");
+                if(name!==""){
+                    resolve(`name is ${name}`)
+                }else{
+                    reject("there is no name")
+                }
+                }, 3000);
+            })
+            }).then((msg)=>{
+                console.log(msg);
+            }).catch((error)=>{
+                console.error(error);
+            })  ;
+    </script>
+</body>
+</html>

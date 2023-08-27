@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <form >
+        <br>
+        <div >
+            <label for="email" >email</label>
+            <input type="text" id="email" pattern=".+@(gmail|outlook)\.com" title="enter email" placeholder="enter your email:" required>
+        </div>
+        <div>
+            <label for="name">name</label>
+            <input type="text" id="name" minlength="3" placeholder="enter your name:" title="At Least three letters" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" min="12" max="100"  placeholder="Age">
+        </div>
+        <div>
+            <label for="passwd">password</label>
+            <input type="password" id="passwd" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required title="At least 8 char with numbers and letters">
+        </div>
+        <div>
+            <label for="birthdate">birthdate</label>
+            <input type="date" id="birthdate">
+        </div>
+        <div>
+            <label for="url">url</label>
+            <input type="url" placeholder="Url">
+        </div>
+        <div>
+            <label for="phone">phone number</label>
+            <input type="tel" pattern="^(\+201|01|00201)[0-2,5]{1}[0-9]{8}" required title="enter a phone number" placeholder="phoneNumber">
+        </div>
+        <div>
+            <label for="file">upload file</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="list">dropDown list</label>
+            <select name="list" id="list">
+                <option value="bmw">BMW</option>
+                <option value="audi">audi</option>
+                <option value="volvo">volvo</option>
+            </select>
+        </div>
+        <div>
+            <label for="dataList">dataList</label>
+            <input id="dataList" list="data" placeholder="Browser">
+            <datalist id="data">
+                <option value="edge"></option>
+                <option value="chrome"></option>
+                <option value="firefox"></option>
+            </datalist>
+        </div>
+        <div>
+            <textarea name="text" id="textarea" placeholder="enter you text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender">
+                <label for="female">female</label>
+            </div>
+        </div>
+        <div>
+            <label for="">Vechile:</label>
+            <div>
+                <input type="checkbox" id="car" name="vechile1">
+                <label for="car">Car</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bike" name="vechile2">
+                <label for="bike">Bike</label>
+            </div>
+            <div>
+                <input type="checkbox" id="boat" name="vechile3">
+                <label for="boat">Boat</label>
+            </div>
+        </div>
+         <div>
+            <hgroup>
+                <h1>this is groub heading</h1>
+            </hgroup>
+         </div>
+         <div >
+            <input  class="btn" type="submit" value="submit">
+         </div>
+         <br>
+    </form>
+ </div><!--container-->
+
+ 
+</body>
+</html>

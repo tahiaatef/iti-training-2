@@ -1,0 +1,69 @@
+body{
+    position: relative;
+}
+#first,#second{
+    width: 300px;
+    position: relative;
+}
+div:first-child:hover img{
+    animation-name: firstAnimation;
+    animation-duration: 2s;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+div:nth-child(2):hover img{
+    animation-name: secondAnimation;
+    animation-duration: 2s;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+div:nth-child(3):hover img{
+    content: url('tiger.gif');
+    animation-name: tigerAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes firstAnimation {
+    from{
+        transform: translate(0,0) scale(1) rotate(0);
+    }
+    to{
+
+        transform:translate(calc(100vw / 2 - 50%),calc(100vh / 2 - 50%)) scale(3) rotate(360deg);
+       
+    }
+}
+@keyframes secondAnimation {
+    0%{
+        transform: translate(0,0) scale(1) rotate(0);
+    }
+    50%{
+        transform:translate(calc(100vw / 2 - 50%),0) scale(1) rotate(360deg);
+        }
+        100%{
+        transform:translate(calc(100vw / 2 - 50%),0) scale(3) rotate(360deg);
+       
+    }
+}
+
+
+@keyframes tigerAnimation {
+    0%{
+        transform:  translateX(0px) rotateY(0deg);
+    }
+    5%{
+        transform:  translateX(0px) rotateY(180deg);
+    }
+    50%{
+        transform: translateX(500px)  rotateY(180deg);
+    }
+    55%{
+        transform: translateX(500px)  rotateY(0deg);
+    }
+    100%{
+        transform:  translateX(0px) rotateY(0deg);
+    }
+}

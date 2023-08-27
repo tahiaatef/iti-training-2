@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function displayCourse(parms={}){
+            obj={
+                name:"default name",
+                duration:"default duration",
+                owner:"default owner"
+            }
+            obj=Object.assign(obj,parms);
+            console.log(obj);
+        }
+        displayCourse();
+        displayCourse({
+            name:"js",
+        });
+        displayCourse({
+            name:"js",
+            duration:"5"
+        });
+        displayCourse({
+            name:"js",
+            duration:"5",
+            owner:"kareem"
+        });
+    </script>
+</html>

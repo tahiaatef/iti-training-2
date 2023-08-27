@@ -1,0 +1,25 @@
+div{
+    margin: 20px 40px;
+    font-size: 1.2em;
+}
+
+div input{
+    padding: 5px;
+}
+input:invalid{
+    border: 2px solid rgb(255, 0, 242);
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    background-color: rgb(220, 190, 248);
+    border-radius: 10px;
+}
+.btn{
+    font-size: xx-large;
+    background-color: rgb(162, 42, 134);
+    color: aliceblue;
+    border: 2%;
+    padding: 5px;
+}

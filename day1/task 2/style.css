@@ -1,0 +1,20 @@
+.container{
+    position: relative;
+    display: flex;
+}
+.container div{
+    min-width: 300px;
+    min-height: 200px;
+    border: 1px solid gray;
+    margin: 20px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container div p{
+    position: absolute;
+    z-index: -1;
+}

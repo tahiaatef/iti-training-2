@@ -1,0 +1,12 @@
+*{
+    list-style: none;
+}
+nav a{
+    color: white !important;
+}
+nav ul a{
+    font-size: 18px !important;
+}
+nav img{
+    width: 3%;
+}

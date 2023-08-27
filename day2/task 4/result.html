@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>queryString</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 1.5em;
+            color: red;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body onload="splitURL(location.search)">
+    <script>
+        let queryString;
+        function splitURL(url){
+            let text=url.slice(1,);
+            let arr=text.split("&");
+            queryString=arr.map((e)=>{
+                return e.split("=");
+            })
+            showMSG();
+        }
+        function showMSG(){
+            if(queryString){
+                const para=document.createElement("p");
+                para.innerHTML=`thanks : ${queryString[0][1]}`;
+                document.body.appendChild(para);
+            }else{
+                alert("there is no data");
+            }
+        }
+    </script>
+</body>
+</html>

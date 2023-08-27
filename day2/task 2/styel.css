@@ -1,0 +1,16 @@
+.btns{
+    position: fixed;
+    left: 70%;
+    transform: translate(-50%,0);
+  
+}
+p{
+    max-width: 600px;
+}
+.btn{
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+} 

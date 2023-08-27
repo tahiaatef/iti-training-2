@@ -1,0 +1,10 @@
+.btn{
+    background-color: blue;
+    color: aliceblue;
+    border: 2%;
+    font-size: larger;
+    margin: 20px;
+}
+.btns{
+    text-align: center;
+}
